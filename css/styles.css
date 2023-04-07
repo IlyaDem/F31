@@ -1,0 +1,77 @@
+body, h2, p{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(../img/bg.jpg);
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container{
+	max-width: 1500px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	margin-top: 30px;
+	-webkit-box-shadow: 11px 10px 18px -10px rgba(0,0,0,0.45);
+	-moz-box-shadow: 11px 10px 18px -10px rgba(0,0,0,0.45);
+	box-shadow: 11px 10px 18px -10px rgba(0,0,0,0.45);
+	border: 1px solid #000;
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 35px 40px 35px 35px;
+}
+.container h2{
+	font-size: 26px;
+}
+.container p{
+	margin-top: 10px;
+	color: #ccc;
+	font-size: 17px;
+}
+form{
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-auto-rows: auto;
+	grid-row-gap: 10px;
+}
+form p{
+	font-size: 18px;
+	color: #fff !important;
+}
+form input,
+form option,
+form select{
+	width: 100%;
+	display: block;
+	font-size: 18px;
+	padding: 5px 15px;
+	box-sizing: border-box;
+	border: none;
+}
+::placeholder, select{
+	color: grey;
+	font-size: 14px;
+}
+form div:nth-child(2),
+form div:nth-child(6){
+	display: flex;
+	justify-content: space-between;
+}
+form div:nth-child(2) input{
+	flex-basis: 48%;
+}
+form div:nth-child(6) input{
+	flex-basis: 28%;
+}
+form div:nth-child(6) input:nth-child(3){
+	flex-basis: 38%;
+}
+form textarea{
+	width: 100%;
+	resize: none;
+	box-sizing: border-box;
+	border: none;
+	font-size: 18px;
+}

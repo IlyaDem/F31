@@ -9,32 +9,36 @@
 	<title>Document</title>
 </head>
 <body>
-
-	<form action="#" method="post">
-		<input type="text" name="" value="Enter your name" id="" placeholder="Enter your name" required maxlength="25" pattern="[A-Za-zА-Яа-яЁё]{2,25}">
-		Введите дату рождения
-		<input type="text" placeholder="08" required maxlength="2" pattern="[0-3]{1}[0-9]{1}">
-		<input type="password" placeholder="Enter your password max 50" required maxlength="50">
-		<input type="email" placeholder="Enter your email" required>
-
-		<input type="file" accept=".jpg, .png, .bmp, .gif">
-<br><br>
-
-		<input type="radio">
-		<input type="checkbox" id="var1" checked><label for="var1">Odesa</label>
-
-<br><br>
-
-		<input type="button" value="My button">
-		<button type="submit">Send</button>
-		<button type="reset">Reset</button>
-		<button>Button</button>
-
-		<textarea name="" id="" cols="30" rows="10" placeholder="lfbg"></textarea>
-
-	</form>
-
-
-
+	<div class="container">
+		<h2>Contact form</h2>
+		<p>Please fill in your infirmation and we'll be sending your order.</p>
+		<form action="#" method="post">
+			<p>Your name</p>
+			<div>
+				<input type="text" required placeholder="first name">
+				<input type="text" required placeholder="last name">
+			</div>
+			<p>Your email</p>
+			<div>
+				<input type="email" required placeholder="your email">
+			</div>
+			<p>Phone *</p>
+			<div>
+				<input type="text" required placeholder="000">
+				<input type="text" required placeholder="000">
+				<input type="text" required placeholder="0000">
+			</div>
+			<p>Message subject *</p>
+			<div>
+				<select name="" id="">
+					<option value="">Other</option>
+				</select>
+			</div>
+			<p>Message *</p>
+			<div>
+				<textarea name="" id="" cols="30" rows="6"></textarea>
+			</div>
+		</form>
+	</div>
 </body>
 </html>
